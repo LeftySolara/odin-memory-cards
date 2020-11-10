@@ -1,12 +1,9 @@
-import React from 'react';
+import React from "react";
+import "./card.css";
 
 function Card(props) {
-    const { color } = props;
-    return (
-        <div>
-            <p>{color}</p>
-        </div>
-    );
+  const { image } = props;
+  return <div className="card">{image}</div>;
 }
 
 export default Card;
