@@ -75,7 +75,7 @@ function App() {
       image: <img className="image" src={salmon} alt="salmon" />,
     },
     {
-      id: 8,
+      id: 12,
       name: "waffles",
       image: <img className="image" src={waffles} alt="waffles" />,
     },
