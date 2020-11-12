@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 import createCards from "./components/card";
+import ScoreCard from "./components/scorecard";
 
 import "./app.css";
 
@@ -31,7 +32,12 @@ function App() {
   }
 
   const cards = createCards(handleClick);
-  return <div id="grid">{cards}</div>;
+  return (
+    <div>
+      <ScoreCard score={score} highScore={highScore} />
+      <div id="grid">{cards}</div>);
+    </div>
+  );
 }
 
 export default App;
