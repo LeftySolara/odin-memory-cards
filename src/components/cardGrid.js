@@ -6,7 +6,15 @@ import "./cardGrid.css";
 
 function CardGrid(props) {
   const { clickHandler } = props;
-  const cards = createCards(clickHandler);
+  let cards = createCards(clickHandler);
+
+  /* Fisher-Yates shuffle */
+  for (let i = cards.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * i);
+    const temp = cards[i];
+    cards[i] = cards[j];
+    cards[j] = temp;
+  }
 
   return <div id="cardGrid">{cards}</div>;
 }
