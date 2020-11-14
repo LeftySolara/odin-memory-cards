@@ -1,7 +1,14 @@
 #scoreCard {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-evenly;
-    width: 20%;
-    font-size: 18px;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#scoreCard p {
+    margin-right: 30px;
 }
