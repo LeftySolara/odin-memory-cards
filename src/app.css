@@ -8,3 +8,8 @@ html, body, #root, #app {
     color: #8E8D8A;
     background-color: #EAE7DC;
 }
+
+#app p {
+    text-align: center;
+    font-size: 18px;
+}

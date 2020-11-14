@@ -28,6 +28,8 @@ function App() {
   return (
     <div id="app">
       <Header score={score} highScore={highScore} />
+      <p>Click on the images to increase your score.</p>
+      <p>Clicking an image more than once will reset your score!</p>
       <CardGrid clickHandler={handleClick} />
     </div>
   );
