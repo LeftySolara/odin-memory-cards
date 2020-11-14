@@ -12,8 +12,6 @@ function App() {
 
   function handleClick(id) {
     if (clickedCards.includes(id)) {
-      // TODO: Replace alert with a modal dialog
-      alert("Game over! Resetting score...");
       if (score > highScore) {
         setHighScore(score);
       }
