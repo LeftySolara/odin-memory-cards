@@ -1,5 +1,7 @@
 import React from "react";
 
+import "./scoreCard.css";
+
 /**
  * Component that displays the player's score.
  *

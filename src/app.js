@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 
 import CardGrid from "./components/cardGrid";
-import ScoreCard from "./components/scorecard";
+import Header from "./components/header";
+
+import "./app.css";
 
 function App() {
   const [score, setScore] = useState(0);
@@ -25,7 +27,7 @@ function App() {
 
   return (
     <div>
-      <ScoreCard score={score} highScore={highScore} />
+      <Header score={score} highScore={highScore} />
       <CardGrid clickHandler={handleClick} />
     </div>
   );
