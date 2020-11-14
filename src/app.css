@@ -1,4 +1,10 @@
-html, body, #root, .App {
+html, body, #root, #app {
+    height: 100%;
     width: 100%;
     margin: 0;
+}
+
+#root {
+    color: #8E8D8A;
+    background-color: #EAE7DC;
 }

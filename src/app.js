@@ -26,7 +26,7 @@ function App() {
   }
 
   return (
-    <div>
+    <div id="app">
       <Header score={score} highScore={highScore} />
       <CardGrid clickHandler={handleClick} />
     </div>
